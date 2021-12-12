@@ -1,0 +1,24 @@
+//DECLARATION
+DECLARE STR1,STR2 : STRINGS
+DECLARE a : INTEGER
+
+//INITIALISATION
+STR1 ← ""
+STR2 ← ""
+a ← 0
+
+//INPUT
+INPUT "STRING TO PROCESS :",STR1
+
+//PROCESS
+ a  ←  Len(STR1)
+        STR1  ←  LCase(STR1)
+        If a < 3 Then STR2  ←  STR1
+        If a > 2 And Right(STR1, 3)  ←  "ing" Then
+            STR2  ←  STR1 & "ly"
+        ElseIf a > 2 And Right(STR1, 3) <> "ing" Then
+            STR2  ←  STR1 & "ing"
+            End If
+
+//OUTPUT
+OUTPUT "PROCESSED STRING :",STR2
